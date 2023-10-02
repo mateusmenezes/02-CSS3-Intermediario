@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>sobrepondo elementos</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.conteudo1{
+				background: orange;
+				width: 120px;
+				height: 120px;
+				position: absolute;
+			}
+			.conteudo2{
+				background: green;
+				width: 120px;
+				height: 120px;
+				position: absolute;
+				top: 20px;
+				z-index: -1;/* a z index define qual elemento aparece primeiro, quanto  menor o numero, mais próximo de ser o primeiro ele fica*/
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<div class="conteudo1">
+			conteudo1
+		</div>
+		<div class="conteudo2">
+			conteudo2
+		</div>
+
+	</body>
+</html>

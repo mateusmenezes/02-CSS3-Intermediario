@@ -1,0 +1,14 @@
+/*modelo de caixa- box model*/
+
+#conteudo{
+	width: 150px;
+	border: 2px solid red;
+	padding-top: 20px; /* o  padding vai ser contabilizado com o tamanho final da caixa*/
+	padding: 20px 15px; /* quando coloca dois o primeiro vai para 
+	o top e bottom e o segundo para left e right*/
+	margin:20px; /* Serve para margem exterior da caixa e funciona com a mesma lógica do padding 
+	com as configurações top, bottom, left  e right*/
+
+	/*margin-collapse é quando coloca duas margens e elas se sobrepoe, prevalece, no final, a margem maior, por exemplo:
+	 se colocar um margin-bottom 30 e margin-top 20, a margem final vai ser 30*/
+}

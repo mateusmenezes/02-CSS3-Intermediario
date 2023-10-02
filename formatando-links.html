@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head> <!--<<OBS>> a ordem de formatação de link deve seguir conforme está escrito abaixo-->
+		<title>links</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			/*para links não visitados pode-se usar uma cor e usa-se a formatação abaixo*/
+			a:link {
+				color: green;
+			}
+			/*Para links visitados pode-se usar uma cor e usa-se a formatação abaixo*/
+			a:visited {
+				color: red;
+			}
+			/*para links que mudam a cor quando o cursor passa por cima usa-se a formatação abaixo*/
+			a:hover {
+				color: orange;
+			}
+
+			/*para cores dos links ativo(quando clicado) usa-se a formatação abaixo*/
+			a:active {
+				color: blue;
+			}
+/*
+uma outra opção quando quer usar a mesma formatação é colocá-lo na mesma link exemplo:
+ a:visited, a:hover{
+	color:blue;
+ }
+
+ Para formatar diversos links com formatações diferentes basta usar seletores (exemplo mais pratico no projeto tres):
+ mas basicamente é colocar junto com o seletor exemplo disso na ID: 
+ #area-cabeçalho a:link, #area-cabeçalho a:visited{
+	
+ }  
+ */
+		</style>
+	</head>
+	<body>
+		<a href="https://www.google.com">google</a>|
+		<a href="www.tecmundo.com.br">tecmundo</a>|
+		<a href="www.google.com">google</a>
+
+	</body>
+</html>

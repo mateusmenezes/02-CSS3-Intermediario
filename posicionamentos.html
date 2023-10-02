@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>posicionamentos( static, relative, absolute e fixed)</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body{
+				background: #007fc7;
+			}
+			#container{
+				background: #FFF;
+				width: 800px;
+				margin: 10px auto; /* auto serve para que a largura do container seja centralizada automaticamente*/
+				position: relative;
+			}
+			p{
+				width: 200px;
+			}
+			.relative{/*o posicionamento é baseado na posição  inicial do elemento*/
+				border: 3px solid red;
+				position: relative; /*para fazer alterações precisa de uma propriedade de deslocamento*/
+				top: 20px; /* isso serve para fazer modificações fora do fluxo padrão do documento( use o comentario para posição para ver o fluxo normal e depois tire para ver o fluxo com posicionamento) */
+				left: 80px;
+
+			}
+			.absolute{/*o posicionamento dele é baseado no container que ele está inserido que tenha uma posição diferente do fluxo padrão do documento*/
+				border: 2px solid red;
+				position: absolute;/*Quando define absoluto, ele sai do fluxo normal do documento e não afeta os outros elementos da pagina*/
+				top: 20px;
+				right: 20px;
+			}
+			.fixed{
+				position: fixed;
+				/* nesse tipo de posicionamento, o o elemento se alinha conforme a janela do navegador*/
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div>
+				<h2> posicionamentos</h2>
+				<p>
+					p1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<p>
+					p2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<p>
+					p3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</div>
+
+	</body>
+</html>
